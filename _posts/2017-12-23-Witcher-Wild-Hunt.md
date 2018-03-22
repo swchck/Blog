@@ -3,7 +3,7 @@ layout: post
 title: "Обзор на ведьмака"
 description: "Обзор на ведьмака"
 thumb_image: "documentation/sample-image.jpg"
-tags: [web, jekyll]
+tags: [games, review]
 ---
 
 ## Еще один бесполезный обзор на Ведьмак 3 Дикая Охота
