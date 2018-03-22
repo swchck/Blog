@@ -10,8 +10,8 @@ url: http://bogomazov.ml
 
 about_enabled: true
 baseurl:
-discus_identifier: andrewcohen-ml
-ga_analytics: UA-116236023-1
+discus_identifier: # bogomazov-ml
+ga_analytics: UA-116269240-1
 local_fonts: false
 rss_enabled: true
 scrollappear_enabled: true
