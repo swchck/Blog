@@ -1,16 +1,16 @@
 const commands = {
-    'help': {
-        'text': `$ <b>help</b><br>
+    '--help': {
+        'text': `$ <b>--help</b><br>
         >&nbsp;Welcome to my CLI resume.<br>
         &nbsp;Available commands list is:<br>
-        &nbsp;- help<br>
-        &nbsp;- about<br>
-        &nbsp;- projects<br>
-        &nbsp;- contacts<br>
+        &nbsp;- --help<br>
+        &nbsp;- cat about<br>
+        &nbsp;- cat projects<br>
+        &nbsp;- cat contacts<br>
         &nbsp;- funfact`
     },
-    'about': {
-        'text': `$ <b>about</b> <br>
+    'cat about': {
+        'text': `$ <b>~/about</b> <br>
         >&nbsp;Hello!<br>
         &nbsp;My name is Andrew and I'm a Java developer. <br>
         &nbsp;This simple CLI-like resume will guide you through projects I've made and will tell you a bit about my experience. <br>
@@ -23,8 +23,8 @@ const commands = {
         &nbsp;You can find list of all available commands by typing "help" in console. <br>
         &nbsp;This thing is written by <a href='https://github.com/swchck'>@swchck</a>, 2018.`
     },
-    'projects': {
-        'text': `$ <b>Job & Education</b> <br>
+    'cat projects': {
+        'text': `$ <b>~/Job & Education</b> <br>
         >&nbsp;Here lies list of work and pet projects I made. <br>
         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <br>
         &nbsp;&nbsp;Corporative/work projects: <br>
@@ -43,7 +43,7 @@ const commands = {
             Groovy,
             JMeter,
             Linux,
-            Writing Project Documentation,
+            Writing Project Documentation
 
             ]; </pre>
         - Heineken:<br>
@@ -58,11 +58,28 @@ const commands = {
             Windows,
             Writing Project Documentation,
             Service Desk,
+            Cisco
+
+            ]; </pre><br>
+
+        - Russian Telephone Company:<br>
+        <br>
+        &nbsp;&nbsp;position: 'Smart Hand';<br>
+        &nbsp;&nbsp;remote: false; <br>
+        &nbsp;&nbsp;startsAt: new Date ('20-05-2017'); <br>
+        &nbsp;&nbsp;endsAt: new Date ('10-08-2017'); <br>
+        &nbsp;&nbsp;description: ""; <br>
+        &nbsp;&nbsp;skills: [<pre>
+            Linux,
+            Windows,
+            Service Desk,
             Cisco,
+            Cashbox Service
+
             ]; </pre><br>`
     },
-    'contacts': {
-        'text': `$ <b>contacts</b> <br>
+    'cat contacts': {
+        'text': `$ <b>~/contacts</b> <br>
         >&nbsp;You can contact me via email: <br>
         &nbsp;<b>swchck@gmail.com</b><br>
         >&nbsp;or on Telegram: <br>
