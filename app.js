@@ -62,7 +62,7 @@ const commands = {
 
             ]; </pre><br>
 
-        - Russian Telephone Company:<br>
+        - RussianTelephoneCompany:<br>
         <br>
         &nbsp;&nbsp;position: 'Smart Hand';<br>
         &nbsp;&nbsp;remote: false; <br>
