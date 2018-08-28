@@ -6,6 +6,7 @@ const commands = {
         &nbsp;- --help<br>
         &nbsp;- cat about<br>
         &nbsp;- cat projects<br>
+        &nbsp;- cat workexp<br>
         &nbsp;- cat contacts<br>
         &nbsp;- funfact`
     },
@@ -24,7 +25,10 @@ const commands = {
         &nbsp;This thing is written by <a href='https://github.com/swchck'>@swchck</a>, 2018.`
     },
     'cat projects': {
-        'text': `$ <b>~/Job & Education</b> <br>
+          'text': `$ <b>~/Job & Education</b> <br>`
+        },
+    'cat workexp': {
+        'text': `$ <b>~/Work Experience</b> <br>
         >&nbsp;Here lies list of work and pet projects I made. <br>
         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <br>
         &nbsp;&nbsp;Corporative/work projects: <br>
@@ -38,12 +42,50 @@ const commands = {
         &nbsp;&nbsp;description: ""; <br>
         &nbsp;&nbsp;skills: [<pre>
             Java,
-            PostgreSQL,
             ElasticSearch,
             Groovy,
-            JMeter,
+            SQL [
+
+                PL/SQL
+                Oracle SQL
+
+                ],
+
+            Writing autotests {
+
+                JMeter,
+                Selenium,
+                RestAssured,
+                Katalon
+
+                },
+
             Linux,
             Writing Project Documentation
+            Another skills {
+
+                Team Tools [
+
+                    Jira,
+                    Confluence,
+                    Bitbucket,
+                    TeamCity,
+                    YouTrack,
+                    UpSource
+
+                ]
+
+                Bash
+                Jasper Reports
+                Virtualization [
+
+                    VMware,
+                    VirtualBox,
+                    Docker
+                    Kubernetes
+
+                ]
+            }
 
             ]; </pre>
         - Heineken:<br>
@@ -103,10 +145,6 @@ const handle = (e) => {
     e.keyCode == 13 ? consInput('inp') : console.log('not ent');
 }
 
-/**
- * Takes input from text-field and pass it to handler if it matches any command from list.
- * @param {string} inp input from console
- */
 const consInput = (inp) => {
     command = $(inp).value;
     error   = '$ '+command+commands.error.text;
