@@ -3,6 +3,7 @@ body, select, input, textarea {
     font-family: Monospace;
     font-size: 17px;
 }
+
 div.console {
     padding: 10px 10px 10px;
 }
