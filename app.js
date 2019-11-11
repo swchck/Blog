@@ -14,9 +14,11 @@ const consInput = inp => {
   let command = $(inp).value.toLowerCase();
   let error = "$ " + command + commands.error.text;
   $(inp).value = "";
-  commands[command]
-    ? print(JSON.stringify(commands[command].text, null, "\t"))
-    : print(error);
+  commands[command] === 'cv'
+    ? print('<a src="cv.pdf">Download PDF resume version</a>')
+    : commands[command]
+        ? print(JSON.stringify(commands[command].text, null, "\t"))
+        : print(error);
 };
 
 function readTextFile(file, callback) {

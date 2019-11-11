@@ -64,7 +64,7 @@
     ]
   },
   "contacts": {
-    "text": "$ You can contact me via email: <br> swchck@gmail.com <br> or on Telegram: <br> @swchck"
+    "text": "$ You can contact me via email: <br> swchck@gmail.com <br> or on Telegram: <br> <a src=\"https://t.me/swchck\">@swchck</a>"
   },
   "error": {
     "text": "$ lost? Try writing \"help\" in console."
