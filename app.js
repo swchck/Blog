@@ -1,4 +1,4 @@
-let commands = readTextFile("data.json", function(text) {
+let commands = readTextFile("https://bogomazov.me/data.json", function(text) {
   commands = JSON.parse(text);
   console.log(commands);
 });
@@ -36,7 +36,8 @@ function readTextFile(file, callback) {
 }
 
 function print(text) {
-  $("text").innerHTML += "<pre>" + text + "</pre>";
+  this.text = text.substring(1, text.length - 1);
+  $("text").innerHTML += "<pre>" + this.text + "</pre>";
   $("text").scrollTop = $("text").scrollHeight;
 }
 

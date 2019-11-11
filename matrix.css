@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    font-family: Monospace;
+    font-size: 17px;
+    border-bottom: 20px solid chartreuse;
+}
+
+canvas {
+    display: block;
+}
+
+.tmux-text-left {
+    size: 2px;
+    color: black;
+    position: absolute;
+    bottom: -9px;
+    margin-left: 1.5%;
+}
+
+.matrix {
+    margin-bottom: 3%;
+}
