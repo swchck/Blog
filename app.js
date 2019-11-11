@@ -1,37 +1,39 @@
-let commands = readTextFile("data.json", function(text){
-    commands = JSON.parse(text);
-    console.log(commands);
+let commands = readTextFile("https://bogomazov.me/data.json", function(text) {
+  commands = JSON.parse(text);
+  console.log(commands);
 });
-const $ = (cn) => {
-    return document.getElementById(cn);
+const $ = cn => {
+  return document.getElementById(cn);
 };
 
-const handle = (e) => {
-    e.keyCode.toString() === "13" ? consInput('inp') : console.log('not ent');
+const handle = e => {
+  e.keyCode.toString() === "13" ? consInput("inp") : "";
 };
 
-const consInput = (inp) => {
-    let command = $(inp).value;
-    console.log(command);
-    if (command === 'ls') {
-        console.log("LS")
-    }
-    let error = '$ ' + command + commands.error.text;
-    $(inp).value = '';
-    console.log(JSON.stringify(commands[command].text, null, '\t'));
-    $('text').innerHTML += '<pre>' + (commands[command] ?  JSON.stringify(commands[command].text, null, '\t') : error) + '</pre>';
+const consInput = inp => {
+  let command = $(inp).value.toLowerCase();
+  let error = "$ " + command + commands.error.text;
+  $(inp).value = "";
+  commands[command]
+    ? print(JSON.stringify(commands[command].text, null, "\t"))
+    : print(error);
 };
 
 function readTextFile(file, callback) {
-    var rawFile = new XMLHttpRequest();
-    rawFile.overrideMimeType("application/json");
-    rawFile.open("GET", file, true);
-    rawFile.onreadystatechange = function() {
-        if (rawFile.readyState === 4 && rawFile.status.toString() === "200") {
-            callback(rawFile.responseText);
-        }
-    };
-    rawFile.send(null);
+  var rawFile = new XMLHttpRequest();
+  rawFile.overrideMimeType("application/json");
+  rawFile.open("GET", file, true);
+  rawFile.onreadystatechange = function() {
+    if (rawFile.readyState === 4 && rawFile.status.toString() === "200") {
+      callback(rawFile.responseText);
+    }
+  };
+  rawFile.send(null);
 }
 
-document.addEventListener('keypress', handle);
+function print(text) {
+  $("text").innerHTML += "<pre>" + text + "</pre>";
+  $("text").scrollTop = $("text").scrollHeight;
+}
+
+document.addEventListener("keypress", handle);

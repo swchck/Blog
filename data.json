@@ -1,14 +1,14 @@
 {
-  "--help": {
-    "text": "$ <b>--help</b><br>$&nbsp;Welcome to my CLI resume.<br>&nbsp;Available commands list is:<br>&nbsp;- --help<br>&nbsp;- cat about<br>&nbsp;- cat projects<br>&nbsp;- cat workexp<br>&nbsp;- cat contacts<br>&nbsp;- funfact"
+  "help": {
+    "text": "$ Welcome to my CLI resume.\n Available commands list is:\n - help \n - about \n - projects \n - workexp \n - contacts \n - funfact"
   },
-  "cat about.json": {
-    "text": "$ <b>~/about</b> <br>$&nbsp;Hello!<br>&nbsp;My name is Andrew and I'm a Java developer. <br>&nbsp;This simple CLI-like resume will guide you through projects I've made and will tell you a bit about my experience. <br>&nbsp;My main skills are: <br>&nbsp;- Java <br>&nbsp;- Spring         <br>&nbsp;- HTML/CSS/LESS   <br>&nbsp;- Python          <br><br>&nbsp;You can find list of all available commands by typing \"help\" in console. <br>&nbsp;This thing is written by <a href='https://github.com/swchck'>@swchck</a>, 2018."
+  "about": {
+    "text": "$ Hello!\n My name is Andrew and I'm a Java developer. \n This simple CLI-like resume will guide you through projects I've made and will tell you a bit about my experience. \n My main skills are: \n - Java \n - Spring \n - HTML/CSS/LESS  \n - Python; \n\n"
   },
-  "cat projects.json": {
-    "text": "$ <b>~/Job & Education</b> <br>"
+  "projects": {
+    "text": "$ Pet Projects"
   },
-  "cat workexp.json": {
+  "expirience": {
     "text": [
       {
         "GIS (Gazinformservice)": {
@@ -44,12 +44,7 @@
           "startsAt": "new Date('17-08-2017')",
           "endsAt": "new Date ('28-12-2017')",
           "description": "",
-          "skills": [
-            "Linux",
-            "Windows",
-            "Service Desk",
-            "Cisco"
-          ]
+          "skills": ["Linux", "Windows", "Service Desk", "Cisco"]
         },
         "RTK (Russian Telephone Company)": {
           "position": "Smart Hand (Service Desk Engineer)",
@@ -68,16 +63,13 @@
       }
     ]
   },
-"cat contacts": {
-"text": "$ <b>~/contacts</b> <br>$&nbsp;You can contact me via email: <br>&nbsp;<b>swchck@gmail.com</b><br>&nbsp;or on Telegram: <br>&nbsp;<b>@swchck</b>"
-},
-"error": {
-"text": "<br>>&nbsp;lost? Try writing \"help\" in console."
-},
-"funfact": {
-"text": "$ <b>funfact</b><br>> Did you know that you can destroy your Linux PC simply by typing 'sudo mv ~ /dev/null' in console? Try it out!"
-},
-  "ls": [
-    "about.json"
-  ]
+  "contacts": {
+    "text": "$ You can contact me via email: \n swchck@gmail.com \n or on Telegram: \n @swchck"
+  },
+  "error": {
+    "text": "$ lost? Try writing \"help\" in console."
+  },
+  "funfact": {
+    "text": "$ Did you know that you can destroy your Linux PC simply by typing 'sudo mv ~ /dev/null' in console? Try it out!"
+  }
 }
