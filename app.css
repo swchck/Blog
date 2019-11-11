@@ -2,29 +2,69 @@ body, select, input, textarea {
     background-color: black;
     font-family: Monospace;
     font-size: 17px;
+    border-bottom: 20px solid chartreuse;
 }
 
 div.console {
-    padding: 10px 10px 10px;
+    padding: 15px 15px 15px;
+    position: absolute;
+    bottom: 20px;
+    margin-bottom: 5px;
+    width: 97%;
+    height: 97%;
 }
 label {
     color: white;
+    position: absolute;
+    bottom: 20px;
 }
 input {
-    margin-left: 5px;
     background-color: black;
     color: white;
     border: 0px;
     width: 95%;
     font-size:17px;
+    position: absolute;
+    bottom: 20px;
+    margin-left: 20px;
 }
 input:focus {
     border: 0px;
     outline: none;
+    position: absolute;
+    bottom: 20px;
 }
 .inputDiv{
     max-width: 100%;
 }
-p {
+
+pre {
     color: white;
+}
+
+.output {
+    padding-bottom: 15px;
+    width: 100%;
+    height: 95%;
+    overflow: hidden;
+}
+
+.outText {
+    padding-bottom: 5px;
+    width: inherit;
+    height: inherit;
+    overflow-y: auto;
+}
+
+.tmux-text-left {
+    size: 2px;
+    color: black;
+    position: absolute;
+    bottom: -9px;
+    margin-left: 1.5%;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
 }

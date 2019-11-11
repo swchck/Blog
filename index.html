@@ -1,16 +1,22 @@
 <head>
     <link rel="stylesheet" href="app.css">
-    <title>Andrew Bogomazov</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>Andrei Bogomazov</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
 </head>
 <body>
-    <div class='console'>
-        <div class="inputDiv"><label for="main">></label><input class='inp' id='inp' name="main" type="text" autofocus value='--help' /></div>
-        <div class="output">
-            <p class='outText' id='text'></p>
-        </div>
+<div class='console'>
+    <div class="output">
+        <pre class='outText' id='text'></pre>
     </div>
-    <script src='app.js'></script>
+    <div class="inputDiv">
+        <label for="main">$</label>
+        <input class='inp' id='inp' name="main" type="text" autofocus value='--help'/>
+    </div>
+</div>
+<div>
+    <p class="tmux-text-left">0: Bash [profile]</p>
+</div>
+<script src='app.js'></script>
 </body>
