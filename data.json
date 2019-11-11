@@ -1,12 +1,12 @@
 {
   "help": {
-    "text": "$ Welcome to my CLI resume.\n Available commands list is:\n - help \n - about \n - projects \n - workexp \n - contacts \n - funfact"
+    "text": "$ Welcome to my CLI resume.<br> Available commands list is:<br> - help <br> - about <br> - projects <br> - workexp <br> - contacts <br> - funfact"
   },
   "about": {
-    "text": "$ Hello!\n My name is Andrew and I'm a Java developer. \n This simple CLI-like resume will guide you through projects I've made and will tell you a bit about my experience. \n My main skills are: \n - Java \n - Spring \n - HTML/CSS/LESS  \n - Python; \n\n"
+    "text": "$ Hello!<br> My name is Andrew and I'm a Java developer. <br> This simple CLI-like resume will guide you through projects I've made and will tell you a bit about my experience. <br> My main skills are: <br> - Java <br> - Spring <br> - HTML/CSS/LESS  <br> - Python; <br><br>"
   },
   "projects": {
-    "text": "$ Pet Projects"
+    "text": []
   },
   "expirience": {
     "text": [
@@ -64,7 +64,7 @@
     ]
   },
   "contacts": {
-    "text": "$ You can contact me via email: \n swchck@gmail.com \n or on Telegram: \n @swchck"
+    "text": "$ You can contact me via email: <br> swchck@gmail.com <br> or on Telegram: <br> @swchck"
   },
   "error": {
     "text": "$ lost? Try writing \"help\" in console."
