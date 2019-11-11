@@ -18,24 +18,22 @@
           "endsAt": "undefined",
           "description": "",
           "skills": [
-            "Java",
-            "ElasticSearch",
-            "Groovy",
-            "PostgreSQL",
-            "JMeter",
-            "Selenium",
-            "RestAssured",
-            "Linux",
-            "Writing Project Documentation",
-            "Jira",
-            "Confluence",
-            "Bitbucket",
-            "TeamCity",
-            "YouTrack",
-            "UpSource",
-            "Bash",
-            "Docker",
-            "Activiti"
+            {
+              "Java": "Java SE, Java 8"
+            },
+            { "Scripting": "Groovy, Bash, Zsh, Python" },
+            { "Databases": "JDBC, PostgreSQL, OrcaleSQL" },
+            { "Testing": "JUnit, Mockito, JMeter, RestAssured" },
+            { "Tools": "Maven, Tomcat, Make" },
+            { "VCS": ["GIT", "GitLab", "Bitbucket"] },
+            { "IDE": "Intellij IDEA, VSCode" },
+            { "FrontEnd": "Vue, JavaScript, HTML/CSS/SASS" },
+            { "BPMN": "Activiti, Camunda" },
+            {
+              "Collaborative Tools": "Jira, Confluence, TeamCity, Youtrack, UpSource"
+            },
+            { "Coding Environment": "Docker" },
+            { "Other": "Writing Project Documentation" }
           ]
         },
         "Heineken": {

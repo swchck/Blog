@@ -1,14 +1,15 @@
 <head>
     <link rel="stylesheet" href="app.css">
     <title>Andrei Bogomazov</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
 </head>
+
 <body>
-<div class='console'>
-    <div class="output">
-        <pre class='outText' id='text'>
+    <div class='console'>
+        <div class="output">
+            <pre class='outText' id='text'>
         <pre> 
 ________________________________________
 / You have Egyptian flu: you're going to \
@@ -30,15 +31,15 @@ Available commands list is:
 - funfact
 <p>You may <a href="cv.pdf">download</a> PDF version of the resume</p>
 </pre>
-        </pre>
+            </pre>
+        </div>
+        <div class="inputDiv">
+            <label for="main">$</label>
+            <input class='inp' id='inp' name="main" type="text" autofocus value='about' />
+        </div>
     </div>
-    <div class="inputDiv">
-        <label for="main">$</label>
-        <input class='inp' id='inp' name="main" type="text" autofocus value='about'/>
+    <div>
+        <p class="tmux-text-left">0: Bash [profile] <a onclick="location.href='matrix.html';">1: Bash [matrix]</a></p>
     </div>
-</div>
-<div>
-    <p class="tmux-text-left">0: Bash [profile]  <a onclick="location.href='matrix.html';">1: Bash [matrix]</a></p>
-</div>
-<script src='app.js'></script>
+    <script src='app.js'></script>
 </body>
