@@ -1,4 +1,4 @@
-let commands = readTextFile("data.json", function(text) {
+let commands = readTextFile("https://bogomazov.me/data.json", function(text) {
   commands = JSON.parse(text);
   console.log(commands);
 });
@@ -12,13 +12,15 @@ const handle = e => {
 
 const consInput = inp => {
   let command = $(inp).value.toLowerCase();
-  let error = "$ " + command + commands.error.text;
+  let error = "$ " + command + " " + commands.error.text;
+  let getCV = $(inp).value.toLowerCase();
   $(inp).value = "";
-  commands[command] === 'cv'
-    ? print('<a src="cv.pdf">Download PDF resume version</a>')
+  getCV === 'cv'
+    ? print('<p><a href="cv.pdf">Download</a> PDF resume version</p>')
     : commands[command]
         ? print(JSON.stringify(commands[command].text, null, "\t"))
         : print(error);
+    getCV = "";
 };
 
 function readTextFile(file, callback) {
