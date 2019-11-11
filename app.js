@@ -1,4 +1,4 @@
-let commands = readTextFile("https://bogomazov.me/data.json", function(text) {
+let commands = readTextFile("data.json", function(text) {
   commands = JSON.parse(text);
   console.log(commands);
 });
