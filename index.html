@@ -1,45 +1,46 @@
-<head>
-    <link rel="stylesheet" href="app.css">
-    <title>Andrei Bogomazov</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<!DOCTYPE html>
+<html>
 
+<head>
+    <link rel="stylesheet" href="resources/styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <link rel="shortcut icon" href="resources/favicon.ico" type="image/x-icon">
+    <title>
+
+    </title>
 </head>
 
 <body>
-    <div class='console'>
-        <div class="output">
-            <pre class='outText' id='text'>
-        <pre> 
-________________________________________
-/ You have Egyptian flu: you're going to \
-\ be a mummy.                            /
-----------------------------------------
-            \   ^__^
-             \  (oo)\_______
-                (__)\       )\/\
-                    ||----w |
-                    ||     ||
-
-$ Welcome to my CLI resume.
-Available commands list is:
-- help
-- about
-- projects
-- expirience
-- contacts
-- funfact
-<p>You may <a href="cv.pdf">download</a> PDF version of the resume</p>
-</pre>
-            </pre>
-        </div>
-        <div class="inputDiv">
-            <label for="main">$</label>
-            <input class='inp' id='inp' name="main" type="text" autofocus value='about' />
+    <div id="app" class="console">
+        <div class="console_out">
+            <div class="console_out_textarea">
+                <pre>
+         ________________________________________
+        / {{joke}} \
+        \________________________________________/
+                                \   ^__^
+                                 \  (oo)\_______
+                                    (__)\       )\/\
+                                        ||----w |
+                                        ||     ||
+                                    
+        $ Welcome to my CLI resume.
+        Available commands list is:
+        <li v-for="command in commands" class="console_out_textarea_li">{{command}}</li>
+        You may <a v-bind:href="cv_link">download</a> PDF version of the resume
+                </pre>
+            </div>
+            <div class="console_input">
+                <label for="main">$</label>
+                <input class='inp' id='inp' name="main" type="text" autofocus autocomplete="on"/>
+            </div>
         </div>
     </div>
     <div>
-        <p class="tmux-text-left">0: Bash [profile] <a onclick="location.href='matrix.html';">1: Bash [matrix]</a></p>
+        <p class="tmux-text-left" onclick="location.href='src/matrix/matrix.html';">0: Bash [profile]       1: Bash [matrix]</p>
     </div>
-    <script src='app.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="resources/javascript/main.js"></script>
 </body>
+
+</html>
