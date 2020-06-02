@@ -24,7 +24,7 @@ label {
 input {
   background-color: black;
   color: white;
-  border: 0px;
+  border: 0;
   width: 95%;
   font-size: 17px;
   position: absolute;
@@ -32,7 +32,7 @@ input {
   margin-left: 20px;
 }
 input:focus {
-  border: 0px;
+  border: 0;
   outline: none;
   position: absolute;
   bottom: 20px;
@@ -68,6 +68,6 @@ pre {
 }
 
 ::-webkit-scrollbar {
-  width: 0px;
+  width: 0;
   background: transparent;
 }
