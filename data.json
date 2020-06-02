@@ -1,6 +1,6 @@
 {
   "help": {
-    "text": "$ Available commands list is:<br> - help <br> - about <br> - projects <br> - workexp <br> - contacts <br> - funfact"
+    "text": "$ Available commands list is:<br> - help <br> - about <br> - projects <br> - experience <br> - contacts <br> - funfact"
   },
   "about": {
     "text": "$ Hello!<br> My name is Andrew and I'm a Java developer. <br> This simple CLI-like resume will guide you through projects I've made and will tell you a bit about my experience. <br> My main skills are: <br> - Java <br> - Spring <br> - HTML/CSS/LESS  <br> - Python; <br><br>"
@@ -8,7 +8,7 @@
   "projects": {
     "text": []
   },
-  "expirience": {
+  "experience": {
     "text": [
       {
         "GIS (Gazinformservice)": {
